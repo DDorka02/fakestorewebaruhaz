@@ -1,0 +1,13 @@
+img{
+    width: 50%;
+    
+}
+
+.card-header{
+    border-bottom: 3px solid green;
+    font-weight: bold;
+}
+
+button{
+    margin-right: 4px;
+}
