@@ -1,9 +1,11 @@
 import React, { useContext } from "react";
 import "./Termek.css";
 import { KosarContext } from "../context/KosarContext";
+import { SzuresContext } from "../context/SzuresContext";
 
 export default function Termek(props) {
   const {kosarba} =useContext(KosarContext)
+  const {szuresNevSzerint} =useContext(SzuresContext)
   function kattintas() {
     kosarba(props.adat)        
 }
