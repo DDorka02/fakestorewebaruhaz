@@ -16,20 +16,10 @@ export const KosarProvider = ({ children }) => {
       } 
       setkosarlista([...skosarLista]);
     }
-    function dbModosit(id, db){
-      const skosarLista = [...kosarlista];
-      const VanIlyen = skosarLista.find((elem) => elem.id === id);    
-      VanIlyen.db = db;   
-      if (db===0){
-      let termekIndex=skosarLista.indexOf(VanIlyen)
-      skosarLista.splice(termekIndex,1)
-      
-      }
-      setkosarlista([...skosarLista]);
-  }
+
 
   return (
-      <KosarContext.Provider value={{ kosarba, kosarlista, dbModosit }}>
+      <KosarContext.Provider value={{ kosarba, kosarlista}}>
       {children}
       </KosarContext.Provider>
   );
